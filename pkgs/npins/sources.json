@@ -363,6 +363,18 @@
       "url": "https://github.com/getomni/spicetify/archive/253ae45d2cac2dc3d92a43193ea8f6d9e7e1d3aa.tar.gz",
       "hash": "0zvngrwikdx5whcf29yqgzxiwaqxr2bmsy5j0c1ffz3s9zikx0p4"
     },
+    "onekoSrc": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "kyrie25",
+        "repo": "spicetify-oneko"
+      },
+      "branch": "master",
+      "revision": "589a8cc3a3939b8c9fc4f2bd087ed433e9af5002",
+      "url": "https://github.com/kyrie25/spicetify-oneko/archive/589a8cc3a3939b8c9fc4f2bd087ed433e9af5002.tar.gz",
+      "hash": "95eb2dadfe2c4b019b06acbed09eeee48a14eb134a1e1df920a671b7fa61a4d6"
+    },
     "orchisSrc": {
       "type": "Git",
       "repository": {
@@ -419,9 +431,9 @@
         "repo": "spicetify-extensions"
       },
       "branch": "main",
-      "revision": "7f97c7645f579f91d87cb9a66c496d552d5ba4e8",
-      "url": "https://github.com/rxri/spicetify-extensions/archive/7f97c7645f579f91d87cb9a66c496d552d5ba4e8.tar.gz",
-      "hash": "1bcp7pxab8nwx3xmsiyzvrn3c417837gh22nyq0mrwfd5c0vay97"
+      "revision": "66ec39bf454d9860154dedb2aee4ddc593144536",
+      "url": "https://github.com/rxri/spicetify-extensions/archive/66ec39bf454d9860154dedb2aee4ddc593144536.tar.gz",
+      "hash": "12gdi3d1sbjsgjzdjrwjf3i8q663lnxwwd8816mgpsj0n8vvidl2"
     },
     "spotifyCanvasSrc": {
       "type": "Git",
@@ -470,18 +482,6 @@
       "revision": "a224969550b3831c4fb084bcc8c675f3a77735d1",
       "url": "https://github.com/Tetrax-10/Spicetify-Extensions/archive/a224969550b3831c4fb084bcc8c675f3a77735d1.tar.gz",
       "hash": "04lss42fd4gkvhncpwmxpj93xx6y8md8m888xn1pcpas6pl2agax"
-    },
-    "onekoSrc": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "kyrie25",
-        "repo": "spicetify-oneko"
-      },
-      "branch": "master",
-      "revision": "589a8cc3a3939b8c9fc4f2bd087ed433e9af5002",
-      "url": "https://github.com/kyrie25/spicetify-oneko/archive/589a8cc3a3939b8c9fc4f2bd087ed433e9af5002.tar.gz",
-      "hash": "95eb2dadfe2c4b019b06acbed09eeee48a14eb134a1e1df920a671b7fa61a4d6"
     }
   },
   "version": 3
