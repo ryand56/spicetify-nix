@@ -115,10 +115,6 @@ in
             type = lib.types.bool;
             default = true;
           };
-          sidebarConfig = lib.mkOption {
-            type = lib.types.bool;
-            default = true;
-          };
           homeConfig = lib.mkOption {
             type = lib.types.bool;
             default = true;
@@ -245,8 +241,8 @@ in
                 AdditionalOptions = {
                   extensions = lib.concatMapStringsSep "|" (item: item.name) allExtensions;
                   custom_apps = lib.concatMapStringsSep "|" (item: item.name) cfg.enabledCustomApps;
-
-                  sidebar_config = cfg.theme.sidebarConfig;
+                  # must be disabled on newer spotify
+                  sidebar_config = false;
 
                   home_config = cfg.theme.homeConfig;
 
@@ -289,7 +285,7 @@ in
             else
               xpui_;
 
-          pre = spicePkgs.spicetify.override {
+          pre = spicePkgs.spicetifyBuilder {
             spotify = cfg.spotifyPackage;
             spicetify-cli = cfg.spicetifyPackage;
             extensions = allExtensions;
@@ -297,7 +293,7 @@ in
             theme = cfg.theme // {
               additionalCss = lib.concatLines ([ (cfg.theme.additionalCss or "") ] ++ cfg.enabledSnippets);
             };
-            inherit (cfg) customColorScheme;
+            inherit (cfg) customColorScheme extraCommands;
             # compose the configuration as well as options required by extensions and
             # cfg.cfg.xpui into one set
             config-xpui = xpui;
